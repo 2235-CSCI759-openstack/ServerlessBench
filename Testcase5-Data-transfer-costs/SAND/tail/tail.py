@@ -14,6 +14,12 @@ import boto3
 import time
 # import requests
 
+def handle(event, context):
+    return handler(event, context)
+
+def handler(event, context):
+    return lambda_handler(event, context)
+    
 def lambda_handler(event, context):
     startTime = GetTime()
     payload = event['payload']

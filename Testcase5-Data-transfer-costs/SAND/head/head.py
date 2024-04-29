@@ -16,6 +16,12 @@ import time
 
 bucketName = "paramtest2020516"
 
+def handle(event, context):
+    return handler(event, context)
+
+def handler(event, context):
+    return lambda_handler(event, context)
+
 def lambda_handler(event, context):
     payload_size = event['payload_size']
     payload = "%s" %(payload_size * '0')
