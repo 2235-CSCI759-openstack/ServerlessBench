@@ -1,0 +1,16 @@
+{
+  "Comment": "Test comm Time",
+  "StartAt": "state_start",
+  "States":{
+    "state_start":{
+      "Type": "Task",
+      "Resource": "headfunction",
+      "Next": "state1"
+    },
+    "state1":{
+      "Type": "Task",
+      "Resource": "tailfunction",
+      "End": true
+    }
+  }
+}
