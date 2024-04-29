@@ -4,12 +4,12 @@
   "States":{
     "state_start":{
       "Type": "Task",
-      "Resource": "headfunction",
+      "Resource": "head",
       "Next": "state1"
     },
     "state1":{
       "Type": "Task",
-      "Resource": "tailfunction",
+      "Resource": "tail",
       "End": true
     }
   }
